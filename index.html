@@ -33,10 +33,11 @@
             <!-- Main div for the quiz -->
             <div class="quiz-div">
 
-            <!-- Start game section with name and categories -->
-            <div id="start-game">
-                <p>To play, fill in your name and choose a category, then just click Start Quiz. For more help on how to play, or
-                    to see the Leaderboard, just click on the buttons below.</p>
+                <!-- Start game section with name and categories -->
+                <div id="start-game">
+                    <p>To play, fill in your name and choose a category, then just click Start Quiz. For more help on
+                        how to play, or
+                        to see the Leaderboard, just click on the buttons below.</p>
                     <input type="text" id="name" name="name" placeholder="First Name">
                     <div class="categories">
                         <label><input type="radio" name="category" id="pop-music"> Pop Music</label>
@@ -44,15 +45,15 @@
                         <label><input type="radio" name="category" id="movies"> Movies</label>
                     </div>
                     <div class="categories">
-                        <button class="button">Start Quiz</button>
-                        <button class="button">How to Play</button>
-                        <button class="button">Leaderboard</button>
+                        <button class="button" onClick="">Start Quiz</button>
+                        <button class="button" onClick="">How to Play</button>
+                        <button class="button" onClick="">Leaderboard</button>
                     </div>
 
-            </div>
+                </div>
 
-            <!-- How to play section -->
-      <!--      <div id="rules">
+                <!-- How to play section -->
+                <!--      <div id="rules">
                 <h3>How to Play</h3>
                 <p>Type your name in the box provided so you can be entered on to the Leaderboard, then choose your
                     category of choice. Select the 'Start Quiz' button and your first question will appear. You will
@@ -60,21 +61,31 @@
                     next question. Repeat until you have answered all 10 questions. Click 'Finish' to see your results.
                     Fancy trying another category? Just select 'Play again'. Good luck!</p>
 
-            </div> --> 
+            </div> -->
 
-            <!-- Leaderboard section -->
-            <div id="leaderboard">
+                <!-- Leaderboard section -->
+                <div id="leaderboard">
 
-            </div>
+                </div>
 
-            <!-- Quiz Questions section -->
-            <div id="quiz-questions">
+                <!-- Quiz Questions section -->
+                <div id="quiz-questions">
+                    <div class="player-name"></div>
+                    <div class="lyrics">
+                        <div class="categories">
+                            <!--   <button class="button" onClick="">Next</button>
+                    <button class="button" onClick="">Start Again</button> -->
+                        </div>
+                    </div>
 
-            </div>
-
-            <!-- Results section -->
-            <div id="results">
-
+                    <!-- Results section
+                <div id="results">
+                    <div class="player-name"></div>
+                    <h2 class="score">You scored </h2>
+                    <div class="categories">
+                        <button class="button" onClick="">Play Again</button>
+                        <button class="button" onClick="">Leaderboard</button>-->
+                </div>
             </div>
             </div>
         </section>
