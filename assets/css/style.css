@@ -1,0 +1,13 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,200;1,300&family=Unica+One&display=swap');
+
+/* Global styles */
+body {
+    background: url("../images/website-background.webp") no-repeat center center;
+    font-family: 'Montserrat', sans-serif;
+    color: #4a474e;
+    min-height: 100vh;
+    /* Background colour if image doesn't load */
+    background-color: #f2ce86;
+}
+
