@@ -1,14 +1,23 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,200;1,300&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,200;1,300&family=Unica+One&display=swap');
+
+/* Wildcard selector to remove default styles */
+* {
+    padding: 0;
+    margin: 0;
+}
 
 /* Global styles */
 body {
     background: url("../images/website-background.webp") no-repeat center center;
     font-family: 'Montserrat', sans-serif;
-    color: #4a474e;
+    font-size: 1rem;
+    color: #49371d;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     /* Background colour if image doesn't load */
-    background-color: #f2ce86;
+    background-color: #ecd283;
 }
 
 h1,
@@ -17,7 +26,46 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Unica One', cursive;
-    color: #4a474e;
+    font-family: 'Dela Gothic One', cursive;
+    color: #49371d;
     text-align: center;
 }
+
+main {
+    </div>
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title heading styles */
+.heading {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    padding-bottom: 15px;
+}
+
+.heading-p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+/* Main section for game to sit in */
+#quiz-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+/* Main div for the quiz */
+.quiz.div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 80%;
+    background-color: rgba(255,255,255,0.6);
+}
+
