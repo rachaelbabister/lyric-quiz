@@ -1,33 +1,3 @@
-// Movie Quiz Questions
-const askQuiz = [
-    {
-        question: `"Look for the bare necessities, the simple bare necessities........"`,
-        answer: [
-            { option: "forget about your money and your life", correct: false },
-            { option: "don't forget about your fork and spoon and knife", correct: false },
-            { option: "forget about your worries and your strife", correct: true }
-        ]
-    },
-
-    {
-        question: "His palms are sweaty, knees weak, ........",
-        answer: [
-            { option: "he's getting petty", correct: false },
-            { option: "arms are heavy", correct: true },
-            { option: "arms are waving", correct: false }
-        ]
-    },
-
-    {
-        question: "Cause your fine and your mine ........",
-        answer: [
-            { option: "and you look so divine", correct: true },
-            { option: "just like a fine wine", correct: false },
-            { option: "will you be my valentine", correct: false }
-        ]
-    }
-];
-
 // Variables to call on html 
 const quizQuestions = document.getElementById('quiz-questions');
 const quizOptions = document.getElementById('quiz-options');
@@ -51,11 +21,11 @@ function showQuestion() {
     let currentQuestion = askQuiz[quizIndex];
     quizQuestions.innerHTML = currentQuestion.question;
 
-    // Options to be put inside a button 
+    // Quiz options to be put inside a button 
     currentQuestion.answer.forEach(answer => {
         const button = document.createElement('button');
         button.innerHTML = answer.option;
-        button.classList.add(option.btn);
+        button.classList.add(option-btn);
         quizOptions.appendChild(button);
         if (answer.correct) {
             button.dataset.correct = answer.correct;
@@ -78,9 +48,9 @@ function showOptions(event) {
     const isRight = option.dataset.correct === 'true';
     if (isRight) {
         option.classList.add('correct');
-        score++
+        score++;
     } else {
-        option.classList.add('wrong')
+        option.classList.add('wrong');
     }
         Array.from(quizOptions.children).forEach(button => {
             if (button.dataset.correct === 'true') {
@@ -95,6 +65,7 @@ function showOptions(event) {
 function showResults() {
     replaceActual();
     quizQuestions.innerHTML = `Well done! You got ${score} out of ${askQuiz.length} questions correct!`;
+    nextQuestion.innerHTML= 'Start again';
     nextQuestion.style.display = 'block';
 }
 

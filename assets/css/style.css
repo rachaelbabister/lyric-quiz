@@ -5,6 +5,7 @@
 * {
     padding: 0;
     margin: 0;
+    max-height: 100vh;
 }
 
 /* Global styles */
@@ -63,40 +64,35 @@ h6 {
     margin-top: 10px;
 }
 
-/* Main section for game to sit in */
-#quiz-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 500px;
-}
-
-/* Container to switch for how to play & leaderboard */
-.quiz-div {
+/* Main section for game */
+.justify-center {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-sizing: border-box;
-    max-height: 440px;
+}
+.quiz-section {
     width: 90%;
-    max-width: 750px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
     gap: 1rem;
     padding: 10px;
     line-height: 1.5rem;
 }
 
-/* Start game div & content styles within */
+.quiz-div {
+
+}
+
+/* Start game div & content styles within 
 .game-play {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-}
+} */
 
-#name {
+/* #name {
     background-color: rgb(255, 255, 255);
     color: #778844;
     width: 130px;
@@ -107,7 +103,7 @@ h6 {
     text-align: center;
     font-weight: 600;
     font-size: 1rem;
-}
+} */
 
 .button {
     font-family: 'Unica One', cursive;
@@ -119,6 +115,7 @@ h6 {
     width: 130px;
     height: 35px;
     margin: 5px 10px;
+    cursor: pointer;
 }
 
 .option-btn {
@@ -130,7 +127,8 @@ h6 {
     text-align: center;
     width: 100%;
     height: 35px;
-    margin: 5px 10px;
+    margin: 5px 0;
+    cursor: pointer;
 }
 
 .button,
