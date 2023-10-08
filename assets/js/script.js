@@ -25,7 +25,7 @@ function showQuestion() {
     currentQuestion.answer.forEach(answer => {
         const button = document.createElement('button');
         button.innerHTML = answer.option;
-        button.classList.add(option-btn);
+        button.classList.add('option-btn');
         quizOptions.appendChild(button);
         if (answer.correct) {
             button.dataset.correct = answer.correct;
@@ -44,13 +44,13 @@ function replaceActual() {
 
 // Choose question options 
 function showOptions(event) {
-    const option = event.target;
-    const isRight = option.dataset.correct === 'true';
+    const chooseOpt = event.target;
+    const isRight = chooseOpt.dataset.correct === 'true';
     if (isRight) {
-        option.classList.add('correct');
+        chooseOpt.classList.add('correct');
         score++;
     } else {
-        option.classList.add('wrong');
+        chooseOpt.classList.add('wrong');
     }
         Array.from(quizOptions.children).forEach(button => {
             if (button.dataset.correct === 'true') {

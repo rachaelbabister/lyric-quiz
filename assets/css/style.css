@@ -1,5 +1,5 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,200;1,300&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,200;1,300&family=Unica+One&display=swap');
 
 /* Wildcard selector to remove default styles */
 * {
@@ -17,8 +17,8 @@ body {
     color: #49371d;
     text-align: center;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+ /*   display: flex;
+    flex-direction: column; */
     /* Background colour if image doesn't load */
     background-color: #ecd283;
 }
@@ -39,11 +39,6 @@ h6 {
     text-align: center;
 }
 
-::placeholder {
-    color: #778844;
-    opacity: 0.7;
-}
-
 /* Heading styles */
 .heading {
     font-size: 3.3rem;
@@ -59,29 +54,27 @@ h6 {
     margin: 0 15px;
 }
 
-#quiz-questions {
-    font-size: 1.5rem;
-    margin-top: 10px;
-}
-
 /* Main section for game */
-.justify-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .quiz-section {
-    width: 90%;
-    max-width: 600px;
-    background-color: rgba(255, 255, 255, 0.8);
-    gap: 1rem;
-    padding: 10px;
-    line-height: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .quiz-div {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    max-height: 440px;
+    width: 90%;
+    max-width: 600px;
+    gap: 1rem;
+    padding: 10px;
+    line-height: 1.5rem;
 }
 
 /* Start game div & content styles within 
@@ -144,5 +137,5 @@ h6 {
 }
 
 .wrong {
-    background: ##ba0903;
+    background: #ba0903;
 }

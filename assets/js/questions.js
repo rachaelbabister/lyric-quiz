@@ -3,9 +3,9 @@ const askQuiz = [
     {
         question: "Look for the bare necessities, the simple bare necessities........",
         answer: [
-          {option: "forget about your money and your life", correct: false},
-          {option: "don't forget about your fork and spoon and knife", correct: false},
-          {option: "forget about your worries and your strife", correct: true}
+          { option: "forget about your money and your life", correct: false },
+          { option: "don't forget about your fork and spoon and knife", correct: false },
+          { option: "forget about your worries and your strife", correct: true }
         ]
     },
 
