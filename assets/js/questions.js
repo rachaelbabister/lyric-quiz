@@ -5,7 +5,7 @@ const askQuiz = [
         answer: [
           {option: "forget about your money and your life", correct: false},
           {option: "don't forget about your fork and spoon and knife", correct: false},
-          {option: "forget about your worries and your strife" correct: true}
+          {option: "forget about your worries and your strife", correct: true}
         ]
     },
 
@@ -23,7 +23,7 @@ const askQuiz = [
         answer: [
           { option: "and you look so divine", correct: true },
           { option: "just like a fine wine", correct: false },
-          { option: "will you be my valentine"; correct: false },
+          { option: "will you be my valentine", correct: false }
         ]
     }
 ];
