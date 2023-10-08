@@ -23,13 +23,13 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Unica One', cursive;
     color: #49371d;
     text-align: center;
 }
 
-h3,
 h4,
 h5,
 h6 {
@@ -68,7 +68,7 @@ h6 {
     min-height: 500px;
 }
 
-/* Main div for the quiz */
+/* Container to switch for how to play & leaderboard */
 .quiz-div {
     display: flex;
     flex-direction: column;
@@ -78,16 +78,17 @@ h6 {
     max-height: 440px;
     width: 90%;
     max-width: 750px;
+    gap: 1rem;
+    padding: 10px;
+    line-height: 1.5rem;   
 }
 
-/* Content styles for Start Game */
-#start-game {
+/* Start game div & content styles within */
+.game-play {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 10px;
-    line-height: 1.5rem;
 }
 
 #name {
@@ -128,3 +129,8 @@ h6 {
     border: 1px solid #ecd283;
 }
 
+/* How to play styles */
+#how {
+    display: none;
+    text-align: center;
+}
