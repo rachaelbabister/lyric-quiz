@@ -1,23 +1,39 @@
-/* Variables to call on html */
+// Variables to call on html 
 const quizQuestions = document.getElementById('quiz-questions');
 const quizOptions = document.getElementById('quiz-options');
 const nextQuestion = document.getElementById('next-btn');
 
-/* Start the quiz & restart quiz at the end*/
+// Variable for questions and score 
+let quizIndex = 0;
+let score = 0;
+
+// Start the quiz & restart quiz at the end
 function startQuiz() {
     quizIndex = 0;
     score = 0;
-    next-btn.innerHTML = 'Next';
-    loadQuestion();
+    nextQuestion.innerHTML = 'Next';
+    showQuestion();
 }
 
-/* Display quiz questions */
+// Display quiz questions
 function showQuestion() {
     let currentQuestion = askQuiz[quizIndex];
     quizQuestions.innerHTML = currentQuestion.question;
+
+    // Options to be put inside a button 
+    currentQuestion.answer.forEach(answer => {
+        const button = document.createElement('button');
+        button.innerHTML = answer.option;
+        button.classList.add(option.btn);
+        quizOptions.appendChild(button);
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener('click', showOptions);
+    });
 }
 
-/* Choose question options */
+// Choose question options 
 function showOptions(event) {
     const option = event.target;
     const isRight = option.dataset.correct === 'true';
@@ -36,13 +52,13 @@ function showOptions(event) {
         nextQuestion.style.display = 'block';
     }
 
-/* Show results of quiz */
+// Show results of quiz 
 function showResults() {
     quizQuestions.innerHTML = `Well done! You got ${score} out of ${askQuiz.length} questions correct!`;
     nextQuestion.style.display = 'block';
 }
 
-/* Next button to reveal score once final question has been answered */
+// Next button to reveal score once final question has been answered 
 function nextButton() {
     quizIndex++;
     if (quizIndex < askQuiz.length) {
@@ -52,8 +68,8 @@ function nextButton() {
     }
 }
 
-/* Event listeners */
-/* Show and hide next button depending on where you are in the game */
+// Event listeners 
+// Show and hide next button depending on where you are in the game 
 nextQuestion.addEventListener('click', () => {
     if (quizIndex < askQuiz.length) {
         nextButton();

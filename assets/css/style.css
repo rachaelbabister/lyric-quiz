@@ -43,7 +43,7 @@ h6 {
     opacity: 0.7;
 }
 
-/* Title heading styles */
+/* Heading styles */
 .heading {
     font-size: 3.3rem;
     line-height: 2.7rem;
@@ -56,6 +56,11 @@ h6 {
     font-size: 1.5rem;
     padding-bottom: 10px;
     margin: 0 15px;
+}
+
+#quiz-questions {
+    font-size: 1.5rem;
+    margin-top: 10px;
 }
 
 /* Main section for game to sit in */
