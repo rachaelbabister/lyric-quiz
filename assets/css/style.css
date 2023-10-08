@@ -130,7 +130,7 @@ h6 {
 }
 
 /* How to play styles */
-#how {
+#how, #leaderboard {
     display: none;
     text-align: center;
 }
