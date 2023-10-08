@@ -38,7 +38,29 @@ function showOptions(event) {
 
 /* Show results of quiz */
 function showResults() {
+    quizQuestions.innerHTML = `Well done! You got ${score} out of ${askQuiz.length} questions correct!`;
+    nextQuestion.style.display = 'block';
+}
 
+/* Next button to reveal score once final question has been answered */
+function nextButton() {
+    quizIndex++;
+    if (quizIndex < askQuiz.length) {
+        showQuestion();
+    } else {
+        showResults();
+    }
 }
 
 /* Event listeners */
+/* Show and hide next button depending on where you are in the game */
+nextQuestion.addEventListener('click', () => {
+    if (quizIndex < askQuiz.length) {
+        nextButton();
+    } else {
+        startQuiz();
+    }
+
+});
+
+startQuiz();
