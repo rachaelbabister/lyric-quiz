@@ -9,7 +9,7 @@
 
 /* Global styles */
 body {
-    background: url("../images/website-background.webp") no-repeat center center;
+    background: url("../images/website-background.webp") no-repeat top center;
     background-size: cover;
     font-family: 'DM Serif Display', serif;
     font-size: 0.9rem;

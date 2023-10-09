@@ -2,19 +2,23 @@
 <html lang="en">
 
 <head>
-    <!-- Meta tags for search engines -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tags for search engines-->
+    <meta name="description" content="Lyrical Blankety Blank - An online music quiz to find the missing song lyric.">
+    <meta name="keywords" content="lyrical blankety blank, music quiz, online quiz, missing lyric quiz, lyric quiz">
+    <title>Lyrical Blankety Blank</title>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
-    <!-- Stylesheet & Title -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Lyrical Blankety Blank</title>
+
 </head>
 
 <body>
@@ -22,7 +26,7 @@
     <header>
         <div>
             <h1 class="heading">Lyrical Blankety Blank</h1>
-            <h2 class="heading-p">Test your musical knowledge and see if you can guess the missing lyric.  </h2>
+            <h2 class="heading-p">Test your musical knowledge and see if you can guess the missing lyric. </h2>
         </div>
     </header>
 
@@ -30,19 +34,20 @@
     <main>
         <div class="quiz-section">
             <div class="quiz-div">
-                <p>Before you select your answer, have a guess at the song title and artist, or in some cases, what movie it's from! Good luck!<p>
-            <h3 id="quiz-questions"></h3>
-            <div id="quiz-options">
-                <button class="option-btn">a</button>
-                <button class="option-btn">b</button>
-                <button class="option-btn">c</button>
+                <p>Before you select your answer, have a guess at the song title and artist, or in some cases, what
+                    movie it's from! Good luck!<p>
+                        <h3 id="quiz-questions"></h3>
+                        <div id="quiz-options">
+                            <button class="option-btn">a</button>
+                            <button class="option-btn">b</button>
+                            <button class="option-btn">c</button>
+                        </div>
+                        <div id="songReveal"></div>
+                        <button class="button" id="next-btn">Next</button>
             </div>
-            <div id="songReveal"></div>
-            <button class="button" id="next-btn">Next</button>
-        </div>
         </div>
     </main>
-    
+
     <!-- Footer -->
     <div class="footer">
         <p>© Lyrical Blankety Blank 2023. </br>Quiz created by Rachael Babister for Portfolio Project 2 - Javascript
