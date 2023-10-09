@@ -90,4 +90,10 @@ nextQuestion.addEventListener('click', () => {
 
 });
 
+// Remove hover after click
+let noHover = document.getElementById('quiz-options');
+function removeHover() {
+    $('#div').removeClass('hover');
+}     
+
 startQuiz();
