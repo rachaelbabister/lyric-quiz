@@ -4,6 +4,11 @@ const quizOptions = document.getElementById('quiz-options');
 const nextQuestion = document.getElementById('next-btn');
 const songReveal = document.getElementById('songReveal');
 
+// Shuffle questions before starting the quiz
+function startQuiz() {
+    shuffleQuiz(askQuiz);
+}
+
 // Variable for questions and score 
 let quizIndex = 0;
 let score = 0;
@@ -14,6 +19,14 @@ function startQuiz() {
     score = 0;
     nextQuestion.innerHTML = 'Next';
     showQuestion();
+}
+
+// Shuffle the questions
+function shuffleQuiz(array) {
+    for (let i = array.length - i; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
 }
 
 // Display quiz questions
