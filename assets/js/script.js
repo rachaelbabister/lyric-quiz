@@ -20,7 +20,7 @@ function startQuiz() {
     nextQuestion.innerHTML = 'Next';
     showQuestion();
     document.getElementById('num-of-num').style.display = 'block';
-    document.getElementById('num-of-num').innerHTML = 'Question 1 of 10';
+    document.getElementById('num-of-num').innerHTML = `Question ${numOfNum} of 10`;
 }
 
 // Shuffle the questions
@@ -38,7 +38,7 @@ function showQuestion() {
     replaceActual();
     let currentQuestion = askQuiz[quizIndex];
 
-    document.getElementById('num-of-num').innerHTML = `Question ${numOfNum} of 10`;
+    document.getElementById('num-of-num').innerHTML = `Question ${numOfNum} of 10`; // Quiz counter
     quizQuestions.innerHTML = currentQuestion.question;
 
     // Quiz options to be put inside a button
@@ -81,7 +81,6 @@ function showOptions(event) {
 
     // Call showSong to reveal the song
     showSong(askQuiz[quizIndex]);
-
     nextQuestion.style.display = 'block';
 }
 
@@ -102,13 +101,16 @@ function showResults() {
     nextQuestion.innerHTML = 'Start again';
     nextQuestion.style.display = 'block';
 
-    document.getElementById('num-of-num').style.display = 'none';
+    document.getElementById('num-of-num').style.display = 'none'; // Hide quiz counter
 }
 
 // Next button to reveal score once the final question has been answered 
 function nextButton() {
-    quizIndex++;
     numOfNum++;
+    if (numOfNum > 10) {
+        numOfNum = 1;
+    }
+    quizIndex++;
     if (quizIndex < askQuiz.length) {
         showQuestion();
     } else {
