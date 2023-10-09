@@ -52,20 +52,20 @@ function showOptions(event) {
     } else {
         chooseOpt.classList.add('wrong');
     }
-        Array.from(quizOptions.children).forEach(button => {
-            if (button.dataset.correct === 'true') {
-                button.classList.add('correct');
-            }
-            button.disabled = true;
-        });
-        nextQuestion.style.display = 'block';
-    }
+    Array.from(quizOptions.children).forEach(button => {
+        if (button.dataset.correct === 'true') {
+            button.classList.add('correct');
+        }
+        button.disabled = true;
+    });
+    nextQuestion.style.display = 'block';
+}
 
 // Show results of quiz 
 function showResults() {
     replaceActual();
-    quizQuestions.innerHTML = `Well done! You got ${score} out of ${askQuiz.length} questions correct!`;
-    nextQuestion.innerHTML= 'Start again';
+    quizQuestions.innerHTML = `Well done! </br>You got ${score} out of ${askQuiz.length} questions correct!`;
+    nextQuestion.innerHTML = 'Start again';
     nextQuestion.style.display = 'block';
 }
 
@@ -89,11 +89,5 @@ nextQuestion.addEventListener('click', () => {
     }
 
 });
-
-// Remove hover after click
-let noHover = document.getElementById('quiz-options');
-function removeHover() {
-    $('#div').removeClass('hover');
-}     
 
 startQuiz();

@@ -16,9 +16,6 @@ body {
     color: #49371d;
     text-align: center;
     min-height: 100vh;
- /*   display: flex;
-    flex-direction: column; */
-    /* Background colour if image doesn't load */
     background-color: #ecd283;
 }
 
@@ -81,26 +78,8 @@ h6 {
     padding: 20px 10px;
     line-height: 1.5rem;
 }
- 
-#name {
-    background-color: rgb(255, 255, 255);
-    color: #778844;
-    width: 130px;
-    height: 35px;
-    border: 1px solid #778844;
-    padding: 0 5px;
-    margin-bottom: 10px;
-    font-family: 'DM Serif Display', serif;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1rem;
-}
 
-::placeholder {
-    color: #778844;
-    opacity: 0.7;
-}
-
+/* Next button style */
 .button {
     font-family: 'Unica One', cursive;
     background-color: #778844;
@@ -120,6 +99,7 @@ h6 {
         border: 1px solid #fbd0b1;
 }
 
+/* Quiz option button styles */
 .option-btn {
     font-family: 'DM Serif Display', serif;
     font-style: italic;
