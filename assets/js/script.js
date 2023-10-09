@@ -7,6 +7,7 @@ const songReveal = document.getElementById('songReveal');
 // Variable for questions and score 
 let quizIndex = 0;
 let score = 0;
+let numOfNum = 1;
 
 /** Start the quiz & restart quiz at the end. 
  * Shuffle the quiz questions and limit to only 10 questions.
@@ -18,6 +19,8 @@ function startQuiz() {
     score = 0;
     nextQuestion.innerHTML = 'Next';
     showQuestion();
+    document.getElementById('num-of-num').style.display = 'block';
+    document.getElementById('num-of-num').innerHTML = 'Question 1 of 10';
 }
 
 // Shuffle the questions
@@ -34,9 +37,11 @@ function showQuestion() {
     songReveal.innerHTML = '';
     replaceActual();
     let currentQuestion = askQuiz[quizIndex];
+
+    document.getElementById('num-of-num').innerHTML = `Question ${numOfNum} of 10`;
     quizQuestions.innerHTML = currentQuestion.question;
 
-    // Quiz options to be put inside a button 
+    // Quiz options to be put inside a button
     currentQuestion.answer.forEach(answer => {
         const button = document.createElement('button');
         button.innerHTML = answer.option;
@@ -57,7 +62,7 @@ function replaceActual() {
     }
 }
 
-// Choose question options 
+// Choose question options
 function showOptions(event) {
     const chooseOpt = event.target;
     const isRight = chooseOpt.dataset.correct === 'true';
@@ -96,11 +101,14 @@ function showResults() {
     quizQuestions.innerHTML = `Well done! </br>You got ${score} out of ${askQuiz.length} questions correct!`;
     nextQuestion.innerHTML = 'Start again';
     nextQuestion.style.display = 'block';
+
+    document.getElementById('num-of-num').style.display = 'none';
 }
 
 // Next button to reveal score once the final question has been answered 
 function nextButton() {
     quizIndex++;
+    numOfNum++;
     if (quizIndex < askQuiz.length) {
         showQuestion();
     } else {
