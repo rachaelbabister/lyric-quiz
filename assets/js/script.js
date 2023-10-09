@@ -4,17 +4,16 @@ const quizOptions = document.getElementById('quiz-options');
 const nextQuestion = document.getElementById('next-btn');
 const songReveal = document.getElementById('songReveal');
 
-// Shuffle questions before starting the quiz
-function startQuiz() {
-    shuffleQuiz(askQuiz);
-}
-
 // Variable for questions and score 
 let quizIndex = 0;
 let score = 0;
 
-// Start the quiz & restart quiz at the end
+/** Start the quiz & restart quiz at the end. 
+ * Shuffle the quiz questions and limit to only 10 questions.
+ */
 function startQuiz() {
+    shuffleQuiz(askQuiz);
+    askQuiz.splice(10, askQuiz.length - 10);
     quizIndex = 0;
     score = 0;
     nextQuestion.innerHTML = 'Next';
@@ -23,7 +22,7 @@ function startQuiz() {
 
 // Shuffle the questions
 function shuffleQuiz(array) {
-    for (let i = array.length - i; i > 0; i--) {
+    for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
