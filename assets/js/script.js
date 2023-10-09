@@ -1,7 +1,8 @@
-// Variables to call on html 
+// Variables to call on HTML 
 const quizQuestions = document.getElementById('quiz-questions');
 const quizOptions = document.getElementById('quiz-options');
 const nextQuestion = document.getElementById('next-btn');
+const songReveal = document.getElementById('songReveal');
 
 // Variable for questions and score 
 let quizIndex = 0;
@@ -17,6 +18,8 @@ function startQuiz() {
 
 // Display quiz questions
 function showQuestion() {
+    quizQuestions.innerHTML = '';
+    songReveal.innerHTML = '';
     replaceActual();
     let currentQuestion = askQuiz[quizIndex];
     quizQuestions.innerHTML = currentQuestion.question;
@@ -58,18 +61,32 @@ function showOptions(event) {
         }
         button.disabled = true;
     });
+
+    // Call showSong to reveal the song
+    showSong(askQuiz[quizIndex]);
+
     nextQuestion.style.display = 'block';
+}
+
+// Reveal song name and artist once user has chosen their answer
+function showSong(songTitle) {
+    const songDiv = document.createElement('div');
+    songDiv.innerHTML = `<p>${songTitle.song}</p>`;
+
+    songReveal.innerHTML = '';
+    songReveal.appendChild(songDiv);
 }
 
 // Show results of quiz 
 function showResults() {
+    songReveal.innerHTML = '';
     replaceActual();
     quizQuestions.innerHTML = `Well done! </br>You got ${score} out of ${askQuiz.length} questions correct!`;
     nextQuestion.innerHTML = 'Start again';
     nextQuestion.style.display = 'block';
 }
 
-// Next button to reveal score once final question has been answered 
+// Next button to reveal score once the final question has been answered 
 function nextButton() {
     quizIndex++;
     if (quizIndex < askQuiz.length) {
@@ -79,15 +96,13 @@ function nextButton() {
     }
 }
 
-// Event listeners 
-// Show and hide next button depending on where you are in the game 
+// Event listener to show and hide next button depending on where you are in the game 
 nextQuestion.addEventListener('click', () => {
     if (quizIndex < askQuiz.length) {
         nextButton();
     } else {
         startQuiz();
     }
-
 });
 
 startQuiz();
