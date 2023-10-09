@@ -10,7 +10,7 @@ const askQuiz = [
         song: "Lose Yourself, Eminem (8 Mile)"
     },
     {
-        question: `"Cause your fine and your mine ........"`,
+        question: `"Cause you're fine and you're mine ........"`,
         answer: [
             { option: "and you look so divine", correct: true },
             { option: "just like a fine wine", correct: false },

@@ -37,20 +37,19 @@ h6 {
 
 /* Heading styles */
 .heading {
-    font-size: 3.3rem;
-    line-height: 2.7rem;
+    font-size: 3.8rem;
+    line-height: 3.2rem;
     padding-bottom: 15px;
     margin-top: 25px;
 }
 
 .heading-p {
-    font-weight: normal;
     font-size: 1.5rem;
     padding-bottom: 30px;
     margin: 0 15px;
 }
 
-/* Main section for game */
+/* Main section for quiz */
 .quiz-section {
     display: flex;
     flex-wrap: wrap;
@@ -59,10 +58,12 @@ h6 {
     width: 100%;
 }
 
+/* Question style */
 .quiz-section h3 {
     font-family: 'DM Serif Display', serif;
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    line-height: 2.1rem;
 }
 
 .quiz-div {
@@ -71,12 +72,18 @@ h6 {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.8);
     box-sizing: border-box;
-    max-height: 500px;
+    height: fit-content;
     width: 90%;
     max-width: 750px;
     gap: 1rem;
     padding: 20px 10px;
     line-height: 1.5rem;
+}
+
+.quiz-div p {
+    font-weight: lighter;
+    font-size: 1rem;
+    color: #778844;
 }
 
 /* Next button style */
@@ -95,8 +102,8 @@ h6 {
 
 .button:hover {
     background-color: #49371d;
-        color: #fbd0b1;
-        border: 1px solid #fbd0b1;
+    color: #fbd0b1;
+    border: 1px solid #fbd0b1;
 }
 
 /* Quiz option button styles */
@@ -110,14 +117,14 @@ h6 {
     text-align: center;
     width: 100%;
     max-width: 450px;
-    height:fit-content;
+    height: fit-content;
     margin: 8px 0;
     padding: 8px 15px;
     cursor: pointer;
 }
 
 .option-btn:hover {
-box-shadow: 0 3px 5px 0 rgba(73, 55, 29, 0.3);
+    box-shadow: 0 3px 5px 0 rgba(73, 55, 29, 0.3);
 }
 
 /* Answer styles for if right or wrong */
@@ -129,4 +136,53 @@ box-shadow: 0 3px 5px 0 rgba(73, 55, 29, 0.3);
 .wrong {
     background: #ba0903;
     color: #ffffff;
+}
+
+/* Footer copyright */
+.footer {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 20px 15px;
+    color: #49371dcc;
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Heading styles */
+    .heading {
+        font-size: 4.2rem;
+        line-height: 3.4rem;
+    }
+
+    .heading-p {
+        font-size: 1.8rem;
+        margin: 0 60px;
+    }
+
+    /* Intro text to quiz in main quiz box */
+    .quiz-div p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin: 0 45px;
+    }
+
+    /* Question style */
+    .quiz-section h3 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin: 0 60px;
+    }
+
+    /* Quiz option button styles */
+    .option-btn {
+        font-size: 1.4rem;
+        margin: 8px 0;
+        padding: 8px 15px;
+    }
+
+        /* Footer copyright */
+        .footer {
+            font-size: 0.9rem;
 }
