@@ -21,25 +21,22 @@ GITHUB PAGES
 - [LYRICAL BLANKETY BLANK](#lyrical-blankety-blank)
   - [CONTENTS](#contents)
   - [User Experience (UX)](#user-experience-ux)
-    - [User Stories](#user-stories)
-      - [Client Goals](#client-goals)
-      - [Visitor Goals](#visitor-goals)
+    - [Client Goals](#client-goals)
+    - [Visitor Goals](#visitor-goals)
   - [Design](#design)
     - [Colour Scheme](#colour-scheme)
     - [Typography](#typography)
     - [Imagery](#imagery)
     - [Wireframes](#wireframes)
   - [Features](#features)
-    - [General features on the Quiz](#general-features-on-the-quiz)
-      - [Favicon](#favicon)
-      - [Game Title](#game-title)
-      - [Game Area](#game-area)
-      - [Intro Text](#intro-text)
-      - [Questions](#questions)
-      - [Answers](#answers)
-      - [Results](#results)
+    - [Favicon](#favicon)
+    - [Game Title](#game-title)
+    - [Game Area](#game-area)
+    - [Intro Text](#intro-text)
+    - [Questions](#questions)
+    - [Answers](#answers)
+    - [Results](#results)
     - [Future Implementations](#future-implementations)
-    - [Accessibility](#accessibility)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
@@ -58,11 +55,7 @@ GITHUB PAGES
 
 ## User Experience (UX)
 
-### User Stories
-
-
-
-#### Client Goals
+### Client Goals
 
 - For users to play an online quiz to test their musical knowledge in song lyrics.
 - Be engaging and fun.
@@ -71,7 +64,7 @@ GITHUB PAGES
 - For users to see their progress through the quiz so they know how many questions they have left.
 - Allow the user to try the quiz again after they get their final score. 
 
-#### Visitor Goals
+### Visitor Goals
 
 - I'm looking to play an online quiz that tests my knowledge about a specific subject.
 - I want it to be fun and engaging, but not take so long that I get fed up answering questions.
@@ -147,35 +140,33 @@ Keeping that all in mind, I still tried to keep the design as close to the wiref
 
 The quiz is just a one page website, with all functionality running through Javascript. The page has been designed to be responsive.
 
-### General features on the Quiz
-
-#### Favicon
+### Favicon
 - The site has a favicon which is shown in the web browser and if a user was to bookmark the page, it enables the site to be instantly recognised and selected.
 
 ![Favicon](assets/images/readme-images/favicon-logo.png)
 
-#### Game Title
+### Game Title
 - The game title is static and stays visible on the page throughout the duration of the quiz.
 
 ![Game Title](assets/images/readme-images/screenshots/heading.png)
 
-#### Game Area
+### Game Area
 - The game area is contained in a transparent white box, with some intro copy, a question counter, the question and then 3 multiple choice answers.
 
 ![Game Area](assets/images/readme-images/screenshots/game-area.png)
 
-#### Intro Text
+### Intro Text
 - The introductory text is a small static paragraph which stays visible through the whole game. It suggests to users to think about what the song title is before selecting their answer.
 
 ![Intro Text](assets/images/readme-images/screenshots/game-intro.png)
 
-#### Questions
+### Questions
 - The question area shows the question to be answered, and also a counter just above, for the user to see how far they are in the quiz.
 - There are 15 questions in total which are shuffled each time a user plays, however they only answer 10 questions per game.
 
 ![Questions](assets/images/readme-images/screenshots/question.png)
 
-#### Answers
+### Answers
 - The three multiple choice answers are presented in a box/button format, with a shadow hover.
 - When the user selects an answer, it will change to green if they got question right, or red if they got the question wrong.
 - After the user has chosen their answer, the song title and artist appears underneath the answer boxes.
@@ -184,30 +175,19 @@ The quiz is just a one page website, with all functionality running through Java
 ![Answers](assets/images/readme-images/screenshots/answers.png)
 ![Reveal Answer](assets/images/readme-images/screenshots/answer-reveal.png)
 
-#### Results
+### Results
 - Once the user has answered all 10 questions, the results replace the quiz, congratulating them and showing how many questions out of 10 they got correct.
 - They can also choose to play again, by clicking on the Start Again button.
 
 ![Results](assets/images/readme-images/screenshots/results.png)
 
-
-
 ### Future Implementations
 
-- A new page with standard pricing and examples of cakes and their pricing.
-- An information page giving users cake care and cutting guides.
-- A suppliers page - recommendations of where to buy supplies.
-- A 'recipe' page which details flavours available for sponge and fillings, and what options of treat boxes are available.
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
-
-### Accessibility
-
-I have tried to ensure the site has been made as accessible as possible by:
-
-- Using semantic HTML.
-- Using alt attributes on images where available.
-- Adding aria-labels for screen labels.
-- Using colour contrasts between the text and background.
+- It would be great to introduce the functions that I originally wanted to include from my wireframe:-
+  - A text input for users to enter their name.
+  - Three categories of music to choose from.
+  - A 'how to play' section that appears over the top of the game, with a close button to reveal the game again.
+  - A leaderboard of the top 10 players and their scores.
 
 ---
 
@@ -215,7 +195,7 @@ I have tried to ensure the site has been made as accessible as possible by:
 
 ### Languages Used
 
-HTML and CSS were used to create this website.
+HTML, CSS and Javascript were used to create this interactive online game.
 
 ### Frameworks, Libraries & Programs Used
 
@@ -223,11 +203,11 @@ HTML and CSS were used to create this website.
 - [Codeanywhere](https://app.codeanywhere.com/) - cross platform cloud IDE to deploy workspace environment to Github.
 - [Github](https://github.com/) - to store and dislay all files and assets for the website.
 - [Google Fonts](https://fonts.google.com/) - to import the fonts used on the website.
-- [Font Awesome](https://fontawesome.com/icons) - to use icons on the website.
 - [Google Dev Tools](https://developer.chrome.com/docs/) - to troubleshoot, test and solve issues with any styling.
 - [W3C Markup Validator](https://validator.w3.org/) - to check the source code of my html files for any bugs.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - to check the source code of my css file for any bugs.
-- Photoshop 2023 - to optimise images for the website.
+- [JSHint](https://jshint.com/) - to check the Javascript code for any bugs.
+- Photoshop 2023 - to optimise images for the quiz and this README file.
 - [Am I Responsive?](https://ui.dev/amiresponsive?) - to showcase the website on different devices.
 
 Add any frameworks, libraries or programs used while creating your project.
