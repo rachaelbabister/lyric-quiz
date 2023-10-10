@@ -35,6 +35,15 @@ h6 {
     text-align: center;
 }
 
+a {
+    color: #49371d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #161109;
+}
+
 /* Heading styles */
 .heading {
     font-size: 3.8rem;
