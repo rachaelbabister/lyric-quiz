@@ -31,10 +31,13 @@ GITHUB PAGES
     - [Wireframes](#wireframes)
   - [Features](#features)
     - [General features on the Quiz](#general-features-on-the-quiz)
-      - [Home Page](#home-page)
-      - [Gallery](#gallery)
-      - [Contact](#contact)
-      - [Thank You](#thank-you)
+      - [Favicon](#favicon)
+      - [Game Title](#game-title)
+      - [Game Area](#game-area)
+      - [Intro Text](#intro-text)
+      - [Questions](#questions)
+      - [Answers](#answers)
+      - [Results](#results)
     - [Future Implementations](#future-implementations)
     - [Accessibility](#accessibility)
   - [Technologies Used](#technologies-used)
@@ -146,39 +149,48 @@ The quiz is just a one page website, with all functionality running through Java
 
 ### General features on the Quiz
 
-- Favicon
-  - The site has a favicon which is shown in the web browser and if a user was to bookmark the page, it enables the site to be instantly recognised and selected.
+#### Favicon
+- The site has a favicon which is shown in the web browser and if a user was to bookmark the page, it enables the site to be instantly recognised and selected.
 
 ![Favicon](assets/images/readme-images/favicon-logo.png)
 
-- Game Area
-  - 
+#### Game Title
+- The game title is static and stays visible on the page throughout the duration of the quiz.
 
-![All 4 paged of the website showing they are responsive](assets/images/readme-images/responsive-pages.png)
+![Game Title](assets/images/readme-images/screenshots/heading.png)
 
-![All 4 paged of the website showing they are responsive](assets/images/readme-images/headerandfooter.png)
+#### Game Area
+- The game area is contained in a transparent white box, with some intro copy, a question counter, the question and then 3 multiple choice answers.
 
-#### Home Page
+![Game Area](assets/images/readme-images/screenshots/game-area.png)
 
-The home page features a bright hero image of some cupcakes and a treat box directly underneath the navigational header. There is some welcome text underneath, which introduces the baker and where they're based.
+#### Intro Text
+- The introductory text is a small static paragraph which stays visible through the whole game. It suggests to users to think about what the song title is before selecting their answer.
 
-The next section is broken down into images and text, to showcase some of the cakes and treat boxes, and gives the user ideas as to what they can order and for who.
+![Intro Text](assets/images/readme-images/screenshots/game-intro.png)
 
-Just above the footer there is another image banner with a call to action to take you to the contact page.
+#### Questions
+- The question area shows the question to be answered, and also a counter just above, for the user to see how far they are in the quiz.
+- There are 15 questions in total which are shuffled each time a user plays, however they only answer 10 questions per game.
 
-#### Gallery
+![Questions](assets/images/readme-images/screenshots/question.png)
 
-In this top section below the menu header, it starts by asking if the user needs inspiration and to take a look at the gallery. There are 3 anchor links (cakes, cupcakes and treat boxes) which when clicked take you to the appropriate part of the gallery.
+#### Answers
+- The three multiple choice answers are presented in a box/button format, with a shadow hover.
+- When the user selects an answer, it will change to green if they got question right, or red if they got the question wrong.
+- After the user has chosen their answer, the song title and artist appears underneath the answer boxes.
+- A 'next' box will also appear, allowiing the user to move on to the next question.
 
-The same call to action banner is also at the bottom above the footer.
+![Answers](assets/images/readme-images/screenshots/answers.png)
+![Reveal Answer](assets/images/readme-images/screenshots/answer-reveal.png)
 
-#### Contact
+#### Results
+- Once the user has answered all 10 questions, the results replace the quiz, congratulating them and showing how many questions out of 10 they got correct.
+- They can also choose to play again, by clicking on the Start Again button.
 
-To bring some colour and interest to this page there is a colourful cake banner image below the menu section. It invites users to get in touch using the contact form. Some elements are required before the form can be submitted, and users do get alerted when they haven't filled in these elements.
+![Results](assets/images/readme-images/screenshots/results.png)
 
-#### Thank You
 
-A simple page with the same styling as the Contact page. The form elements have been removed and replaced with a 'thank you for submitting' message.
 
 ### Future Implementations
 
