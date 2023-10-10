@@ -2,7 +2,7 @@
 
 Welcome to the music quiz, Lyrical Blankety Blank. This quiz has been created for users to have a little bit of musical fun, trying to fill in the missing words to 10 song lyrics.
 
-It has been built using HTML, CSS and Javascript to allow the user to interact with the site in a fun and engaging way.
+It has been built using HTML, CSS and JavaScript to allow the user to interact with the site in a fun and engaging way.
 
 ![Lyrical Blankety Blank shown on a range of devices, using amiresponsive(https://ui.dev/amiresponsive)](assets/images/readme-images/lyrical-responsive.png)
 
@@ -129,7 +129,7 @@ I created Wireframes for mobile, tablet and desktop using [Balsamiq.](https://ba
 ![Desktop Wireframe](assets/images/readme-images/desktop-wireframe.png)
 </details>
 
-I was aiming high when I created the wireframes for this project, wanting to be able to add lots of functions into the quiz. However, when it came to putting it all together, I realised I had perhaps been slightly over ambitious! I have found learning Javascript very challenging, and so I downscaled my project to be able to do the best I could with fewer functions, whilst still being able to show all that I have learnt.
+I was aiming high when I created the wireframes for this project, wanting to be able to add lots of functions into the quiz. However, when it came to putting it all together, I realised I had perhaps been slightly over ambitious! I have found learning JavaScript very challenging, and so I downscaled my project to be able to do the best I could with fewer functions, whilst still being able to show all that I have learnt.
 
 Keeping that all in mind, I still tried to keep the design as close to the wireframes as possible.
 
@@ -138,7 +138,7 @@ Keeping that all in mind, I still tried to keep the design as close to the wiref
 
 ## Features
 
-The quiz is just a one page website, with all functionality running through Javascript. The page has been designed to be responsive.
+The quiz is just a one page website, with all functionality running through JavaScript. The page has been designed to be responsive.
 
 ### Favicon
 - The site has a favicon which is shown in the web browser and if a user was to bookmark the page, it enables the site to be instantly recognised and selected.
@@ -195,7 +195,7 @@ The quiz is just a one page website, with all functionality running through Java
 
 ### Languages Used
 
-HTML, CSS and Javascript were used to create this interactive online game.
+HTML, CSS and JavaScript were used to create this interactive online game.
 
 ### Frameworks, Libraries & Programs Used
 
@@ -206,18 +206,16 @@ HTML, CSS and Javascript were used to create this interactive online game.
 - [Google Dev Tools](https://developer.chrome.com/docs/) - to troubleshoot, test and solve issues with any styling.
 - [W3C Markup Validator](https://validator.w3.org/) - to check the source code of my html files for any bugs.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - to check the source code of my css file for any bugs.
-- [JSHint](https://jshint.com/) - to check the Javascript code for any bugs.
+- [JSHint](https://jshint.com/) - to check the JavaScript code for any bugs.
 - Photoshop 2023 - to optimise images for the quiz and this README file.
 - [Am I Responsive?](https://ui.dev/amiresponsive?) - to showcase the website on different devices.
-
-Add any frameworks, libraries or programs used while creating your project.
 
 ### Deployment
 
 I used Github Pages to deploy the live website. To deploy a website on Github, follow these steps:
 
 1. Log in to Github - or set up a new account.
-2. Find the repository for [Blush Bakes by Rach](https://github.com/rachaelbabister/blush-bakes-by-rach).
+2. Find the repository for [Lyrical Blankety Blank](https://github.com/rachaelbabister/lyric-quiz) (the repository for the quiz is called 'lyric-quiz').
 3. Click on 'Settings' along the top.
 4. Click on 'Pages' in the left hand side navigation bar.
 5. In the 'Source' section, ensure 'Deploy from a branch' is selected. Choose 'main' and 'Root' from the drop down menus and click Save.
@@ -230,15 +228,15 @@ I used Github Pages to deploy the live website. To deploy a website on Github, f
 To fork a repository on Github, follow these steps:
 
 1. Log in to Github - or step up a new account.
-2. Click on the repository for [Blush Bakes by Rach](https://github.com/rachaelbabister/blush-bakes-by-rach).
-3. Click the Fork button in the top right corner.
+2. Find the repository for [Lyrical Blankety Blank](https://github.com/rachaelbabister/lyric-quiz) (the repository for the quiz is called 'lyric-quiz').
+3. Click the Fork button in the top right corner (below where 'Settings' is).
 
 #### How to Clone
 
 To clone a repository on Github, follow these steps:
 
 1. Log in to Github - or step up a new account.
-2. Find the repository for [Blush Bakes by Rach](https://github.com/rachaelbabister/blush-bakes-by-rach).
+2. Find the repository for [Lyrical Blankety Blank](https://github.com/rachaelbabister/lyric-quiz) (the repository for the quiz is called 'lyric-quiz').
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and paste the link you copied in step 3. Press enter.
@@ -247,9 +245,7 @@ To clone a repository on Github, follow these steps:
 
 ## Testing
 
-I have learnt from this project to ensure I start my TESTING file from the begining in future. I continually test the site as I go along and have fixed many small issues that didn't work straight away, but unfortunately these weren't catalogued.
-
-In the TESTING file linked below, you can see the tests and fixes I did manage to catalogue.
+In the TESTING file linked below, you can see the tests and bug fixes I carried out on this site.
   
 [TESTING.md file](TESTING.md)
 
@@ -259,30 +255,25 @@ In the TESTING file linked below, you can see the tests and fixes I did manage t
 
 ### Code Used
 
-- [W3Schools](https://www.w3schools.com/howto/howto_css_transition_hover.asp) - helped to style my buttons to have a smoother transition. I also used them for a Font Awesome tooltip, but have since removed the element that used it.
-- [W3Docs](https://www.w3docs.com/snippets/css/display-the-hidden-element-on-hovering-over-hyperlink-or-a-tag.html) - helped to display an element on hover.
-- [RapidTables](https://www.rapidtables.com/convert/color/hex-to-rgb.html) - converting hex colours to rgb values.
-- [Stack Overflow](https://stackoverflow.com/questions/51893686/css-columns-fill-row-first) - helped to style my gallery page so that the columns filled the rows across first, rather than down.
-- [Free Code Camp](https://www.freecodecamp.org/news/css-only-back-to-top-button/) - helped to code the 'back to top' button using only html and css.
-- [W3Docs](https://www.w3docs.com/tools/code-editor/3033) - styling to increase the checkbox size in the contact form.
-- [Soft Author](https://softauthor.com/css-flexbox-responsive-registration-form-with-source-code/) - used the code in order to help make the contact form responsive by having the form elements go into two columns on a bigger screen.
-- I also used the [Love Running](https://rachaelbabister.github.io/loverunning/) project I created with [Code Institute](https://codeinstitute.net/) to help with some coding.
+- [Sitepoint](https://www.sitepoint.com/simple-javascript-quiz) - a guide to help me get started with creating a quiz.
+- [W3Schools](https://www.w3schools.com) - I used this website to help with the following elements:
+  - CSS Box Shadow
+  - DOM Elements
+  - JavaScript const (to remind myself when to use this over let)
+  - JavaScript Array from() Method
+- [Medium](https://medium.com/geekculture/creating-counter-with-javascript-4b1c60892c45) - guided me in working out how to create the question counter.
+- [Horns on Fire](https://tanisecarvalho.github.io/horns-on-fire/) - I looked through the source code of a fellow Code Institute student to help with how to separate my long list of question arrays to my main javascript file; code for the next button; and shuffle questions.
+- [Stack Overflow](https://stackoverflow.com/questions/5484560/javascript-if-else-statement-to-hide-and-show-div) - guided me to better understand using an if else statment to hide and show divs.
+- [Slack Community](https://app.slack.com/) - I asked for help on Slack when I was trying to create the 'How to Play' section, however this didn't make it into the final project.
 
 ### Content
 
-All content used on the site was written by Rachael Babister.
+Introductory copy used on the site was written by Rachael Babister. Song Lyrics written by their respective Artists/song writers.
 
 ### Media
 
-All photos were taken by Rachael Babister and are originals. Icons used on the site are Font Awesome icons.
+The background image was purchased from [Shutterstock](https://www.shutterstock.com/), and the favicon icon came from Canva.
   
 ### Acknowledgments
 
-I would like to thank the following people for their help, whether directly or indirectly!
-
-- My two daughters who have been very patient with me whilst doing this project, and helping to walk the dog and clean the house!
-- My Code Institute Mentor [Jubril Akolade](https://www.linkedin.com/in/jubrillionaire/?originalSubdomain=ca).
-- Members of the Code Institute Slack community. Although I didn't ask any direct questions for help, when searching for little queries, I always managed to find the answer!
-- My friend Victoria Walters who has had to listen to me chat about code for far too long! And for looking over my site and checking for errors.
-- My friend Kelly Bates who knows nothing about code but still happily looked through my live site for me checking for any issues - and bringing some to my attention!
-- [Stuart Crang](https://www.linkedin.com/in/stuart-crang-50401897/) from Code Institute who signed me up to the course! I hope you like my first project!
+Yet again, I need to thank my amazing daughters who are very patient when I snap at them after struggling with trying to get something to work, and for getting me food and making lots of cups of tea. They also helped gather together the lyrics for the quiz, as did my close friends who also gave me their favourite songs, and then tested the site for me and gave me great feedback to make me feel like it is all worth it! ;)
