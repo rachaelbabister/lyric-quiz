@@ -104,7 +104,9 @@ function showResults() {
     document.getElementById('num-of-num').style.display = 'none'; // Hide quiz counter
 }
 
-// Next button to reveal score once the final question has been answered 
+/** Next button to reveal score once the final question has been answered 
+ * and question counter to show user how far they are in the quiz
+*/
 function nextButton() {
     numOfNum++;
     if (numOfNum > 10) {
